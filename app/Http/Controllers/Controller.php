@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Http\Client\Request;
-use Illuminate\Routing\Redirector;
+use Illuminate\Http\RedirectResponse;
 use PHPMailer\PHPMailer\PHPMailer;
+use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Exception;
 
@@ -79,7 +79,7 @@ class Controller extends BaseController
         ]);
     }
 
-    public function store(Request $request): Redirector
+    public function store(Request $request): RedirectResponse
     {
         $mail = new PHPMailer(true);
         $message = '';

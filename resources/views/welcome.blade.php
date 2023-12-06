@@ -245,7 +245,7 @@
         <span>Have something to offer?</span>
     </p>
 
-    <form class="inter" action="/contact" method="post" style="cursor: none">
+    <form class="inter" action="/" method="post" style="cursor: none">
         @csrf
         <div class="flex flex-col md:flex-row gap-y-6 gap-x-0 md:gap-y-0 md:gap-x-6">
             <div class="w-full">

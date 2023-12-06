@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    color: white;
+    background-color: #0115a8;
+    scroll-behavior: smooth;
+    cursor: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+::selection {
+    background: white; /* WebKit/Blink Browsers */
+    color: #0115a8;
+}
+
+::-moz-selection {
+    background: white; /* Gecko Browsers */
+    color: #0115a8;
+}
+
+.inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.grotesk {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.color-blue {
+    color: #0115a8;
+}
+
+.bg-color-blue {
+    background-color: #0115a8;
+}
+
+.hover-this {
+    transition: all 0.3s ease;
+}
+
+a {
+    cursor: none;
+}
+
+.cursor {
+    display: block;
+    pointer-events: none;
+    position: fixed;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+}
+
+.hover-this:hover ~ .cursor {
+    transform: translate(-25%, -25%) scale(4);
+}
+
+.animate-bounce-right {
+    animation: bounce-right 1s infinite;
+}
+
+@keyframes bounce-right {
+    0%, 100% {
+        transform: translateX(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateX(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+li.line-list::marker {
+    content: url("data:image/svg+xml,%3Csvg width='32' height='13' viewBox='0 0 32 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.850023 5.85003L29.65 5.85003L24.7 0.900024L25.4 0.150024L31.65 6.40002L25.4 12.65L24.7 11.9L29.65 6.95002L0.850023 6.95002V5.85003Z' fill='white'/%3E%3C/svg%3E%0A");
+    margin-right: 1rem;
+}
+
+.work-sample {
+    width: 900px;
+    height: 500px;
+    cursor: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='0.8' height='48' stroke='black' stroke-width='1.1' fill='white' width='48'%3E%3Cpath d='M6 38h3v-8.7q0-2.7 1.9-4.6 1.9-1.9 4.6-1.9h20.8l-7.7 7.7 2.1 2.1L42 21.3 30.7 10l-2.1 2.1 7.7 7.7H15.5q-3.9 0-6.7 2.775Q6 25.35 6 29.3Z'/%3E%3C/svg%3E") 16 16, pointer;
+}
+
+@media (max-width: 639px) {
+    .work-sample {
+        width: 225px;
+        height: 125px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cursor {
+        display: none;
+    }
+
+    .work-sample {
+        width: 450px;
+        height: 250px;
+    }
+}

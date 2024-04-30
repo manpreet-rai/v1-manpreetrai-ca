@@ -269,7 +269,7 @@
                       rows="6"></textarea>
         </div>
 
-        <div class="g-recaptcha my-4" data-sitekey="6LeDqScpAAAAAHzfI8yqPFX13naXcRzM4LHYJ9th"></div>
+        <div class="g-recaptcha my-4" data-sitekey="6LdupCgpAAAAAPzwGMpttG3puRSOPT3KHsu1_i2k"></div>
 
         <div class="mt-4">
             <input style="cursor: none" type="submit"

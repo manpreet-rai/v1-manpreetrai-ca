@@ -67,10 +67,9 @@ class Controller extends BaseController
             ]
         ];
 
-        $skills = ['HTML', 'CSS ', 'Javascript', 'PHP', 'Python', 'Tailwind CSS', 'Bootstrap', 'Bulma', 'Laravel',
-            '.NET', 'Node', 'WordPress', 'Shopify', 'React', 'Vue', 'Angular', 'jQuery', 'MySQL', 'PostgreSQL','Firebase',
-            'DynamoDB', 'Jenkins', 'Ansible', 'Terraform', 'Vagrant', 'Packer', 'AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes',
-            'Git', 'Windows', 'Linux', 'MacOS', 'Photoshop', 'Illustrator', 'Figma', 'AdobeXD', '&nbsp;'
+        $skills = ['Laravel', 'Node JS', '.NET', 'React', 'Vue', 'Angular', 'TailwindCSS',
+		   'MySQL', 'MSSQL', 'PostgreSQL', 'MongoDB', 'PHP', 'Javascript', 'C++', 'Java', 'Python', 'C#',
+		   'Docker', 'Jenkins', 'Ansible', 'Azure', 'AWS', 'Kubernetes'
         ];
 
         return View('welcome', [

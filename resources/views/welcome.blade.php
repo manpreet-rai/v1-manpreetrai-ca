@@ -117,7 +117,8 @@
 </a>
 
 <div id="work" class="max-w-7xl mx-auto px-2 md:px-6 lg:px-8 font-bold grotesk tracking-widest pb-8 uppercase">
-    Selected Works
+    Selected Works <br>
+    <span>See My <a href="https://github.com/manpreet-rai">Github</a> For More</span>
     <span>
                 <svg class="inline lg:hidden ml-3 h-8 w-8 text-white fill-current stroke-current animate-bounce-right"
                      viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">

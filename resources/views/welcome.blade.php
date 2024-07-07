@@ -220,12 +220,14 @@
         @foreach($skills as $skill)
             <span class="mx-4 md:mx-6">{{$skill}}</span>
         @endforeach
+    	&nbsp;
     </div>
 
     <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
         @foreach($skills as $skill)
             <span class="mx-4 md:mx-6">{{$skill}}</span>
         @endforeach
+    	&nbsp;
     </div>
 </div>
 
